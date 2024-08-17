@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(back.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color:rgb(231, 213, 168);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.todo-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.todo-input button {
+    padding: 10px;
+    font-size: 13px;
+    background-color: #28a745;
+    color: #f8f4f4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-input button:hover {
+    background-color: #072c0f;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.task-label {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.edit-btn,
+.delete-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.edit-btn:hover {
+    background-color: #b5b72b;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.complete-checkbox {
+    cursor: pointer;
+}
